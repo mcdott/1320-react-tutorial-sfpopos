@@ -1,17 +1,30 @@
 /*  src/Title.css  */
 .Title {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em;
-    margin-bottom: 2em;
-    background-color: #de5935;
-    color: #fff;
-  }
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  background-color: #de5935;
+  color: #fff;
+}
 
-  .Title-Subtitle {
-    color: #f7cd46;
-  }
+.Title-Subtitle {
+  color: #f7cd46;
+}
+
+.Title a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: rgba(255, 255, 255, 0.835);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Title .nav-link-active {
+  color: #fff;
+  border-bottom: 2px solid;
+}

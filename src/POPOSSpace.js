@@ -10,7 +10,7 @@ function POPOSSpace(props) {
           height="300"
           alt="The space"
         />
-        <h1>{name}</h1>
+        <h4 className='POPOSName'>{name}</h4>
         <div>{address}</div>
         <div className='hours'>{hours}</div>
       </div>
