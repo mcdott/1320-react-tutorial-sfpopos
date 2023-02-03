@@ -8,3 +8,8 @@ text-align: center;
 width: 100%;
 height: auto;
 }
+
+.hours {
+font-style: italic;
+font-weight: bold;
+}
