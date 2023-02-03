@@ -1,20 +1,26 @@
-import React from 'react'
-import './POPOSSpace.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./POPOSSpace.css";
 
 function POPOSSpace(props) {
-    const { name, image, address, hours } = props
-    return (
-      <div className='POPOSSpace'>
-        <img src={`${process.env.PUBLIC_URL}/images/${image}`}     
-          width="300"
-          height="300"
-          alt="The space"
+  const { name, image, address, hours, id } = props;
+  return (
+    <div className='POPOSSpace'>
+      <Link to={`/details/${id}`}>
+        <img
+          src={`${process.env.PUBLIC_URL}images/${image}`}
+          width='300'
+          height='300'
+          alt='The space'
         />
-        <h4 className='POPOSName'>{name}</h4>
-        <div>{address}</div>
-        <div className='hours'>{hours}</div>
-      </div>
-    )
-  }
+      </Link>
+      <h1 className='POPOSName'>
+        <Link to={`/details/${id}`}>{name}</Link>
+      </h1>
+      <div className='Address'>{address}</div>
+      <div className='hours'>{hours}</div>
+    </div>
+  );
+}
 
-export default POPOSSpace
+export default POPOSSpace;
