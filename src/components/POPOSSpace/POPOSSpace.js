@@ -15,10 +15,14 @@ function POPOSSpace(props) {
         />
       </Link>
       <h1 className='POPOSName'>
-        <Link to={`/details/${id}`}>{name}</Link>
+        <Link className='POPOSSpace-title' to={`/details/${id}`}>
+          {name}
+        </Link>
       </h1>
-      <div className='Address'>{address}</div>
-      <div className='hours'>{hours}</div>
+      <div className='POPOSSpace-info'>
+        <div className='Address'>{address}</div>
+        <div className='hours'>{hours}</div>
+      </div>
     </div>
   );
 }
