@@ -28,6 +28,14 @@ function Title() {
           >
             About
           </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "nav-link-active" : "nav-link"
+            }
+            to='/subscribe'
+          >
+            Subscribe
+          </NavLink>
         </div>
       </header>
     </div>
