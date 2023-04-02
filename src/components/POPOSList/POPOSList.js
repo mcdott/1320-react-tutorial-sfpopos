@@ -1,9 +1,7 @@
-import React from "react";
-import { useState } from "react";
-
+import React, { useState } from "react";
 import POPOSSpace from "../POPOSSpace/POPOSSpace";
-import "./POPOSList.css";
 import data from "../../sfpopos-data.json";
+import "./POPOSList.css";
 
 function POPOSList() {
   const [query, setQuery] = useState("");
@@ -26,38 +24,26 @@ function POPOSList() {
           address={address}
           hours={hours}
           image={images[0]}
+          className='space'
         />
       );
     });
+
   return (
     <div className='POPOSList'>
-      <form>
-        <input
-          value={query}
-          placeholder='search'
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <button type='submit'>Submit</button>
-      </form>
-      {spaces}
+      <div className='search-container'>
+        <form>
+          <input
+            value={query}
+            placeholder='search'
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <button type='submit'>Submit</button>
+        </form>
+      </div>
+      <div className='spaces-container'>{spaces}</div>
     </div>
   );
 }
 
 export default POPOSList;
-
-// function POPOSList() {
-//   const spaces = data.map(({ title, address, hours, images }, i) => {
-//     return (
-//       <POPOSSpace
-//         id={i}
-//         key={title}
-//         name={title}
-//         address={address}
-//         hours={hours}
-//         image={images[0]}
-//       />
-//     );
-//   });
-//   return <div className='POPOSList'>{spaces}</div>;
-// }

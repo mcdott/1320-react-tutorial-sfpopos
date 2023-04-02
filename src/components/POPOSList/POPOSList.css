@@ -1,35 +1,47 @@
 .POPOSList {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em;
+  grid-template-rows: auto 1fr;
   max-width: 1200px;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
+}
+
+.spaces-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.search-container {
+  padding-bottom: 2em;
 }
 
 /* Smaller screens and tablets */
 @media only screen and (max-width: 960px) {
-  .POPOSList {
+  .spaces-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 /* Phones */
 @media only screen and (max-width: 600px) {
-  .POPOSList {
+  .spaces-container {
     grid-template-columns: 1fr;
   }
 }
 
+.space {
+  padding-bottom: 1em;
+}
+
 .POPOSList form {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .POPOSList form input,
 .POPOSList form button {
-  padding: 1em;
-  margin: 0;
+  padding: 0.75em;
   border: 1px solid;
   font-size: 1rem;
 }
@@ -38,9 +50,11 @@
   flex: 1;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
+  margin-left: 25em;
 }
 
 .POPOSList form button {
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+  margin-right: 25em;
 }
