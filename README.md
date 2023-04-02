@@ -17,6 +17,7 @@ SFPOPOS
     - Nav
   		- NavLink: Home
   		- NavLink: About
+		- NavLink: Subscribe
 	  - Search field
     - POPOS cards section (11 cards)
 	    -POPOS card example
@@ -32,6 +33,7 @@ SFPOPOS
 	- Nav
   		- NavLink: Home
   		- NavLink: About
+		- NavLink: Subscribe
   - About section
 	  - Title: About SFPOPOS
 	  - Body: Paragraph of text
@@ -43,14 +45,31 @@ SFPOPOS
 	- Nav
   		- NavLink: Home
   		- NavLink: About
+		- NavLink: Subscribe
 	- Detail section (example)
 		- Space name: Transamerica Redwood Park
 		- Description: Paragraph of text
-	  - Photo: jpeg
-	  - Address: 600 Montgomery St San Francisco, CA
-    - Hours: Mon - Fri 7am - 5:30pm
-	  - Amenities: outdoors, coffee
-	  - Latitude and longitude: 37.7952005 -122.4027927
+	  	- Photo: jpeg
+	  	- Address: 600 Montgomery St San Francisco, CA
+    		- Hours: Mon - Fri 7am - 5:30pm
+	  	- Amenities: outdoors, coffee
+	  	- Latitude and longitude: 37.7952005 -122.4027927
+	  
+- Subscribe
+	- Header
+		- Page Title: SFPOPOS
+		- Subtitle: San Francisco Privately Owned Public Open Spaces
+	- Nav
+		- NavLink: Home
+		- NavLink: About
+		- NavLink: Subscribe
+	- Form section
+		- Title: Subscribe to our free newsletter!
+		- Input: First Name
+		- Input: Last Name
+		- Input: Email
+		- Button: Subscribe
+	
 
 ## Wireframes: https://www.figma.com/file/1YSQDyRZK4EPHAUBItt1Zt/SFPOPOS-Wireframes?node-id=0%3A1&t=yOZzWxXRT5hmjEbo-1
 
