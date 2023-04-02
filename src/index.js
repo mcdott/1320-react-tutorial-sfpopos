@@ -6,6 +6,7 @@ import App from "./components/App";
 import POPOSList from "./components/POPOSList/POPOSList";
 import About from "./components/About/About";
 import POPOSDetails from "./components/POPOSDetails/POPOSDetails";
+import Subscribe from "./components/Subscribe/Subscribe";
 import reportWebVitals from "./reportWebVitals";
 
 const rootElement = document.getElementById("root");
@@ -18,6 +19,7 @@ root.render(
         <Route path='/' element={<POPOSList />} />
         <Route path='about' element={<About />} />
         <Route path='/details/:id' element={<POPOSDetails />} />
+        <Route path='subscribe' element={<Subscribe />} />
       </Route>
     </Routes>
   </Router>

@@ -36,7 +36,7 @@
 
 .POPOSList form {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .POPOSList form input,
@@ -44,17 +44,16 @@
   padding: 0.75em;
   border: 1px solid;
   font-size: 1rem;
+  max-width: 250px;
 }
 
 .POPOSList form input {
   flex: 1;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
-  margin-left: 25em;
 }
 
 .POPOSList form button {
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
-  margin-right: 25em;
 }
