@@ -45,28 +45,35 @@
 }
 
 /* Smaller screens and tablets */
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .spaces-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Medium to Large Phones */
-@media only screen and (max-width: 600px) {
+/* Large phones and small tablets */
+@media screen and (max-width: 600px) {
   .spaces-container {
     grid-template-columns: 1fr;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
 
-/*  Small Phones */
-@media only screen and (max-width: 320px) {
-  .spaces-container {
-    grid-template-columns: 1fr;
+/*  Small phones */
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 12px;
+    line-height: 1.3;
   }
+
   .POPOSList form input,
   .POPOSList form button {
-    padding: 0.75em;
-    border: 1px solid;
+    padding: 0.65em;
+    border: 0.9px solid;
     font-size: 0.8rem;
     max-width: 180px;
   }

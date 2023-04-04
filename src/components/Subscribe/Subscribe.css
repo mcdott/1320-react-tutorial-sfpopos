@@ -39,21 +39,18 @@
     padding: 0.65em;
     border: 0.9px solid;
     font-size: 0.8rem;
-    margin-top: 0.5em;
-    width: 100%;
-    border-radius: 0.5em;
   }
 }
 
-/* Medium to Large Phones */
-@media only screen and (max-width: 480px) {
+/* Large phones and small tablets */
+@media screen and (max-width: 480px) {
   .subscribe-form {
     max-width: 310px;
   }
 }
 
-/*  Small Phones */
-@media only screen and (max-width: 320px) {
+/*  Small phones */
+@media screen and (max-width: 320px) {
   .subscribe-form {
     max-width: 280px;
     margin: 0 auto;
