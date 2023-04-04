@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .subscribe-form input {
@@ -27,9 +29,33 @@
   order: 4;
 }
 
-@media only screen and (min-width: 200px) {
+/* Smaller screens and tablets */
+@media only screen and (max-width: 960px) {
   .subscribe-form {
     max-width: 400px;
+  }
+
+  .subscribe-form input {
+    padding: 0.65em;
+    border: 0.9px solid;
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+    width: 100%;
+    border-radius: 0.5em;
+  }
+}
+
+/* Medium to Large Phones */
+@media only screen and (max-width: 480px) {
+  .subscribe-form {
+    max-width: 310px;
+  }
+}
+
+/*  Small Phones */
+@media only screen and (max-width: 320px) {
+  .subscribe-form {
+    max-width: 280px;
     margin: 0 auto;
   }
 }
