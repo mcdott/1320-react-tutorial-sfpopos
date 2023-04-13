@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "./POPOSSpace.css";
 
 function POPOSSpace(props) {
@@ -26,5 +27,14 @@ function POPOSSpace(props) {
     </div>
   );
 }
+
+// Define the prop types for the component
+POPOSSpace.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
+  hours: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+};
 
 export default POPOSSpace;
