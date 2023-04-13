@@ -1,8 +1,37 @@
-
 .Footer {
-    background-color: #5ac3b0;
-    color: #fff;
-    margin-top: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  background-color: #5ac3b0;
+  color: #fff;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.FooterLinks {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.FooterLinks a {
+  color: #fff;
+}
+
+.FooterLinks a:hover,
+.FooterLinks a:active {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .FooterLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .Footer {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
