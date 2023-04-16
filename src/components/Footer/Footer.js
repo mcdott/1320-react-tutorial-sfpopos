@@ -4,8 +4,8 @@ import "./Footer.css";
 function Footer() {
   const date = new Date().getFullYear();
   return (
-    <div className='Footer'>
-      <footer>
+    <div className='FooterWrapper'>
+      <footer className='Footer'>
         <ul className='FooterLinks'>
           <li>
             <a href='https://sf.gov/location/san-francisco-city-hall'>
@@ -21,7 +21,9 @@ function Footer() {
             <a href='https://www.bart.gov/'>BART</a>
           </li>
         </ul>
-        M.J. McDonald-Scott cc {date}
+        <p className='FooterCopy'>
+          &copy; {date} <a href='http://corndog.io/'>M. McDott</a>
+        </p>
       </footer>
     </div>
   );
