@@ -1,6 +1,6 @@
 .Footer {
-  background-color: #5ac3b0;
-  color: #fff;
+  background-color: #9ad2cb;
+  color: #391829;
   margin-top: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -9,17 +9,19 @@
 
 .FooterLinks {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
 }
 
 .FooterLinks a {
-  color: #fff;
+  color: #391829;
+  margin-right: 5rem;
+  padding: 2rem;
 }
 
 .FooterLinks a:hover,
 .FooterLinks a:active {
-  color: #fff;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
