@@ -16,7 +16,7 @@ function Subscribe() {
 
   return (
     <div className='subscribe-container'>
-      <h3>Subscribe to our free newsletter!</h3>
+      <h2>Subscribe to our free newsletter!</h2>
       <form onSubmit={handleSubmit} className='subscribe-form'>
         <label htmlFor='firstName' className='visually-hidden'>
           First Name:
