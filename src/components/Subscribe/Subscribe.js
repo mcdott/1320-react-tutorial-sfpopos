@@ -18,14 +18,30 @@ function Subscribe() {
     <div className='subscribe-container'>
       <h3>Subscribe to our free newsletter!</h3>
       <form onSubmit={handleSubmit} className='subscribe-form'>
+        <label htmlFor='firstName' className='visually-hidden'>
+          First Name:
+        </label>
         <input
           type='text'
           id='firstName'
           placeholder='First Name'
           ref={firstNameRef}
+          aria-required='true'
         />
+        <label htmlFor='lastName' className='visually-hidden'>
+          Last Name:
+        </label>
         <input type='text' id='lastName' placeholder='Last Name' />
-        <input type='email' id='email' placeholder='Email' ref={emailRef} />
+        <label htmlFor='email' className='visually-hidden'>
+          Email:
+        </label>
+        <input
+          type='email'
+          id='email'
+          placeholder='Email'
+          ref={emailRef}
+          aria-required='true'
+        />
         <button type='submit'>Subscribe</button>
       </form>
     </div>
