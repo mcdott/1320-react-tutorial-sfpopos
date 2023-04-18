@@ -11,11 +11,12 @@ function Title() {
           San Francisco Privately Owned Public Open Spaces
         </div>
 
-        <div>
+        <nav aria-label='Main navigation'>
           <NavLink
             className={({ isActive }) =>
               isActive ? "nav-link-active" : "nav-link"
             }
+            activeClassName='nav-link-active'
             to='/'
           >
             Home
@@ -24,6 +25,7 @@ function Title() {
             className={({ isActive }) =>
               isActive ? "nav-link-active" : "nav-link"
             }
+            activeClassName='nav-link-active'
             to='/about'
           >
             About
@@ -32,11 +34,12 @@ function Title() {
             className={({ isActive }) =>
               isActive ? "nav-link-active" : "nav-link"
             }
+            activeClassName='nav-link-active'
             to='/subscribe'
           >
             Subscribe
           </NavLink>
-        </div>
+        </nav>
       </header>
     </div>
   );
