@@ -7,15 +7,16 @@ function Title() {
     <div className='Title'>
       <header>
         <h1>SFPOPOS</h1>
-        <div className='Title-Subtitle'>
+        <p className='Subtitle'>
           San Francisco Privately Owned Public Open Spaces
-        </div>
+        </p>
 
-        <div>
+        <nav aria-label='Main navigation'>
           <NavLink
             className={({ isActive }) =>
               isActive ? "nav-link-active" : "nav-link"
             }
+            activeClassName='nav-link-active'
             to='/'
           >
             Home
@@ -24,6 +25,7 @@ function Title() {
             className={({ isActive }) =>
               isActive ? "nav-link-active" : "nav-link"
             }
+            activeClassName='nav-link-active'
             to='/about'
           >
             About
@@ -32,11 +34,12 @@ function Title() {
             className={({ isActive }) =>
               isActive ? "nav-link-active" : "nav-link"
             }
+            activeClassName='nav-link-active'
             to='/subscribe'
           >
             Subscribe
           </NavLink>
-        </div>
+        </nav>
       </header>
     </div>
   );

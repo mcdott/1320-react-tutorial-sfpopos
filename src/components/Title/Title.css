@@ -12,8 +12,10 @@
   color: #9ad2cb;
 }
 
-.Title-Subtitle {
+.Subtitle {
   color: #feffbe;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .Title a {

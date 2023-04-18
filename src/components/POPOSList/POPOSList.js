@@ -8,11 +8,8 @@ function POPOSList() {
 
   const spaces = data
     .filter((obj) => {
-      // true if query is in title
       const inTitle = obj.title.toLowerCase().includes(query.toLowerCase());
-      // true if query is in address
       const inAddress = obj.address.toLowerCase().includes(query.toLowerCase());
-      // return true if either is true
       return inTitle || inAddress;
     })
     .map(({ title, address, hours, images }, i) => {
@@ -33,15 +30,23 @@ function POPOSList() {
     <div className='POPOSList'>
       <div className='search-container'>
         <form>
+          <label htmlFor='search-input' className='visually-hidden'>
+            Search POPOS:
+          </label>
           <input
+            id='search-input'
             value={query}
             placeholder='search'
             onChange={(e) => setQuery(e.target.value)}
           />
-          <button type='submit'>Submit</button>
+          <button type='submit' aria-label='Submit search'>
+            Submit
+          </button>
         </form>
       </div>
-      <div className='spaces-container'>{spaces}</div>
+      <section className='spaces-container' aria-labelledby='search-input'>
+        {spaces}
+      </section>
     </div>
   );
 }
